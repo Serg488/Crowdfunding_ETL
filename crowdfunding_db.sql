@@ -1,5 +1,6 @@
+
 SELECT * 
-FROM Contacts;
+FROM contacts;
 
 SELECT * 
 FROM category;
@@ -8,4 +9,4 @@ SELECT *
 FROM subcategory;
 
 SELECT * 
-FROM Campaign;
+FROM campaign;
