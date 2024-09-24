@@ -23,7 +23,7 @@ CREATE TABLE "category" (
 
 CREATE TABLE "subcategory" (
     "subcategory_id" VARCHAR(50)   NOT NULL,
-    "subcategory" VARCHAR(50)   NOT NULL,
+    "sub-category" VARCHAR(50)   NOT NULL,
     CONSTRAINT "pk_subcategory" PRIMARY KEY (
         "subcategory_id"
      )
@@ -42,8 +42,8 @@ CREATE TABLE "Campaign" (
     "currency" VARCHAR(50)   NOT NULL,
     "launched_date" DATE   NOT NULL,
     "end_date" DATE   NOT NULL,
-    "category_id" VARCHAR(50)FOREIGN KEY  NOT NULL,
-    "subcategory_id" VARCHAR(50) FOREIGN KEY  NOT NULL,
+    "category_id" VARCHAR(50)FOREIGN KEY   NOT NULL,
+    "subcategory_id" VARCHAR(50)FOREIGN KEY  NOT NULL,
     CONSTRAINT "pk_Campaign" PRIMARY KEY (
         "cf_id"
      )
